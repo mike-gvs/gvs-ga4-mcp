@@ -1,0 +1,12 @@
+# Service account credentials - never commit these
+*.pem
+*.key
+service-account*.json
+*credentials*.json
+*-key.json
+
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
