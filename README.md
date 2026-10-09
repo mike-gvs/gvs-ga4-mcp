@@ -1,6 +1,12 @@
-# ga4-mcp
+# gvs-ga4-mcp
 
-An MCP server that gives Claude (or any MCP client) read-only access to a Google Analytics 4 property's reporting data — traffic overview, top pages, traffic sources, and custom conversion/engagement events.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+**Ask your AI assistant how your website is doing.** A small, read-only MCP server for Google Analytics 4.
+
+This [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) server gives Claude (or any MCP client) read-only access to a Google Analytics 4 property's reporting data — traffic overview, top pages, traffic sources, and custom conversion/engagement events.
+
+Read more: [GA4 MCP Server — talk to your website analytics](https://goldvalleysolutions.com/thoughts/ga4-mcp-server.html)
 
 Built for goldvalleysolutions.com, but works for any GA4 property.
 
@@ -55,3 +61,7 @@ GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json GA4_PROPERTY_ID=123
 - The service account only ever needs **Viewer** access — never grant it Editor/Admin on the GA4 property.
 - Never commit the service account JSON key or `.env` file — both are already covered by `.gitignore`.
 - All tools are read-only against the GA4 Data API; nothing in this server can modify your Analytics configuration or data.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
